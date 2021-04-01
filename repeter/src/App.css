@@ -1,9 +1,13 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
+  padding-top: 40px;
+  padding-bottom: 40px;
   pointer-events: none;
 }
 
@@ -15,17 +19,13 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -33,6 +33,24 @@
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
+}
+
+.Pete {
+  background-color: #282c34;
+  text-align: center;
+  font-size: calc(10px);
+  color:#32a852;
+  justify-content: top;
+}
+
+.Player {
+  justify-content: top;
+  align-items: center;
+  display: flex;
+  padding-top: 40px;
+  flex-direction: column;
+  padding-bottom: 40px;
+
 }
