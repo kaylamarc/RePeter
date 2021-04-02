@@ -5,7 +5,7 @@
 }
 
 .App-logo {
-  height: 30vmin;
+  height: 15vmin;
   padding-top: 40px;
   padding-bottom: 40px;
   pointer-events: none;
@@ -45,13 +45,40 @@
   justify-content: top;
 }
 
+.React-player {
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, .1);
+}
+
 .Player {
   justify-content: top;
   align-items: center;
   display: flex;
-  padding-top: 40px;
   flex-direction: column;
   padding-bottom: 40px;
+}
+
+.Controls {
+  padding-bottom: 40px;
+}
+
+.Instruct {
+  align-content: center;
+  font-size: calc(12px);
+  color: white;
+}
+
+.Pre-List {
+  color: white;
+  justify-content: center;
+}
+
+.List {
+  color: white;
+  padding-left: 600px;
+  list-style: circle;
+  justify-content: center;
+  text-align: initial;
 }
 
 .Button {
