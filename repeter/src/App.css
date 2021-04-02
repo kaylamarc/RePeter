@@ -77,14 +77,15 @@
 .Pre-List {
   color: white;
   justify-content: center;
+  display: initial;
 }
 
 .List {
   color: white;
-  padding-left: 600px;
   list-style: circle;
   justify-content: center;
   text-align: initial;
+  display: inline-block;
 }
 
 .Button {
