@@ -52,5 +52,8 @@
   padding-top: 40px;
   flex-direction: column;
   padding-bottom: 40px;
+}
 
+.Button {
+  background-color: #32a852;
 }

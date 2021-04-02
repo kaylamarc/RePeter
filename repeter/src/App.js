@@ -1,11 +1,32 @@
 import logo from './logo.png';
-import React from 'react'
+import React, { Component } from 'react'
 import ReactPlayer from 'react-player'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
+// function UpdateURL() {
+//   var player = document.getElementById("player");
+//   var input = document.getElementById("url-input");
+
+//   player.url = input.value;
+// }
+
+class App extends Component {
+  state = {
+    url: null,
+    loop: true
+  }
+
+  load = url => {
+    this.setState({
+      url
+    })
+  }
+
+  render() {
+    const { url, loop } = this.state
+
+    return (
+      <div className="App">
       <header className="App-header">
         <h1>Welcome to RePeter!</h1>
       </header>
@@ -16,11 +37,17 @@ function App() {
       </div>
 
       <div className="Player">
-        <ReactPlayer url='https://youtu.be/izwSQOLUakw' />
+        <div>
+          <input ref={input => { this.urlInput = input}} type='text' placeholder='Enter URL'></input>
+          <button className="Button" onClick={ () => this.setState({url: this.urlInput.value})}>Go!</button>
+        </div>
+        <ReactPlayer id="player" url={url} onPlay loop={true}></ReactPlayer>
       </div>
 
     </div>
-  );
+    )
+  }
+
 }
 
 export default App;
