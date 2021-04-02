@@ -55,11 +55,17 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 .Controls {
   padding-bottom: 40px;
+}
+
+.Note {
+  color: red;
+  font-size: calc(12px);
+  text-decoration: underline;
 }
 
 .Instruct {
